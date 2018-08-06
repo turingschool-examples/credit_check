@@ -82,23 +82,29 @@ Create a `CreditCard` class based on the following criteria:
 If the previous criteria are met, you should be able to interact with the `CreditCard` class from a Pry session like so:
 
 ```ruby
+
 pry(main)> require './lib/credit_card'
 #=> true
+
 pry(main)> credit_card = CreditCard.new("5541808923795240", 15000)
 #=> #<CreditCard:0x00007fbb1ca5f698 @card_number="5541808923795240", @limit=15000>
+
 pry(main)> credit_card.card_number
 #=> "5541808923795240"
+
 pry(main)> credit_card.limit
 #=> 15000
+
 pry(main)> credit_card.last_four
 #=> "5240"
+
 pry(main)> credit_card.is_valid?
 #=> true
 ```
 
 ### Iteration 3 - Testing
 
-Write tests for your `CreditCard` class that cover that expected behavior described in the previous iteration. If done correctly, the `bank_test.rb` test should also pass. 
+Write tests for your `CreditCard` class that cover that expected behavior described in the previous iteration. If done correctly, the `bank_test.rb` test should also pass.
 
 ### Iteration 4 - Extensions
 
