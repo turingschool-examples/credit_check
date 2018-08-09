@@ -102,9 +102,11 @@ pry(main)> credit_card.is_valid?
 #=> true
 ```
 
+Also, if the previous criteria are met, the `bank_test.rb` test should pass.
+
 ### Iteration 3 - Testing
 
-Write tests for your `CreditCard` class that cover that expected behavior described in the previous iteration. If done correctly, the `bank_test.rb` test should also pass.
+Write tests for your `CreditCard` class that cover that expected behavior described in the previous iteration.
 
 ### Iteration 4 - Extensions
 
