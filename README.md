@@ -47,7 +47,7 @@ Since the summed results modulo 10 is zero, the account number is valid accordin
 
 ### Iteration 1 - The Luhn Algorithm
 
-Open `credit_check.rb` in your `lib` directory. You should should this template:
+Open `credit_check.rb` in your `lib` directory. You should see this template:
 
 ```ruby
 card_number = "5541808923795240"
