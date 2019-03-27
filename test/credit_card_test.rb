@@ -11,7 +11,6 @@ class CreditCardTest < Minitest::Test
     @amex_credit_card = CreditCard.new("342804633855673", 15000)
     @amex_credit_card_invalid = CreditCard.new("342801633855673", 15000)
   end
-
   def test_it_exists
     assert_instance_of CreditCard, credit_card
   end
@@ -32,7 +31,6 @@ class CreditCardTest < Minitest::Test
   end
 
   def test_it_can_check_amex_cards
-    skip
     assert amex_credit_card.is_valid?
     refute amex_credit_card_invalid.is_valid?
   end
