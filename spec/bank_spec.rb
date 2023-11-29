@@ -16,7 +16,6 @@ RSpec.describe Bank do
   it "knows a transaction is invalid when credit card is invalid" do
     bank = Bank.new("Wells Fargo")
     credit_card = CreditCard.new("4024007106512380", 15000)
-    assert_equal false, bank.valid_transaction?(100, credit_card)
     expect(bank.valid_transaction?(100, credit_card)).to be false
   end
 
