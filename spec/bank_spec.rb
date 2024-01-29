@@ -1,6 +1,6 @@
 require 'rspec'
 require './lib/bank'
-require './lib/credit_card'
+require './lib/credit_check'
 
 RSpec.configure do |config|
   config.formatter = :documentation
@@ -19,19 +19,19 @@ RSpec.describe Bank do
 
   it "knows a transaction is invalid when credit card is invalid" do
     bank = Bank.new("Wells Fargo")
-    credit_card = CreditCard.new("4034007106512380", 15000)
-    expect(bank.valid_transaction?(100, credit_card)).to be false
+    credit_check = CreditCheck.new("4034007106512380", 15000)
+    expect(bank.valid_transaction?(100, credit_check)).to be false
   end
 
   it "knows a transactions is invalid when the amount is over the limit" do
     bank = Bank.new("Wells Fargo")
-    credit_card = CreditCard.new("5541808923795240", 15000)
-    expect(bank.valid_transaction?(20000, credit_card)).to be false
+    credit_check = CreditCheck.new("5541808923795240", 15000)
+    expect(bank.valid_transaction?(20000, credit_check)).to be false
   end
 
   it "knows when a transaction is valid" do
     bank = Bank.new("Wells Fargo")
-    credit_card = CreditCard.new("5541808923795240", 15000)
-    expect(bank.valid_transaction?(11000, credit_card)).to be true
+    credit_check = CreditCheck.new("5541808923795240", 15000)
+    expect(bank.valid_transaction?(11000, credit_check)).to be true
   end
 end
