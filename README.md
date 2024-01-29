@@ -108,6 +108,11 @@ Also, if the previous criteria are met, the `bank_test.rb` test should pass.
 
 Write tests for your `CreditCard` class that cover that expected behavior described in the previous iteration.
 
+To run the tests already written, you'll need to first install RSpec, our testing gem, by running this in your terminal:
+`gem instal rspec`
+
+Then to run the tests, you'll type: `rspec spec/bank_spec.rb` in your terminal.
+
 ### Iteration 4 - Extensions
 
 * Create a command line interface that allows the user to validate a number
