@@ -2,6 +2,10 @@ require 'rspec'
 require './lib/bank'
 require './lib/credit_card'
 
+RSpec.configure do |config|
+  config.formatter = :documentation
+end
+
 RSpec.describe Bank do
   it "exists" do
     bank = Bank.new("Wells Fargo")
