@@ -1,7 +1,7 @@
 ### Learning Goals
-* break a problem into logical components
-* implement appropriate Ruby syntax
-* utilize methods and classes
+* Break a problem into logical components
+* Implement appropriate Ruby syntax
+* Utilize methods and classes
 
 Let's write a program that can detect mistakes in a credit card number.
 
