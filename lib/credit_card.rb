@@ -1,11 +1,12 @@
 # pass two arguments on initialization (string of the credit card number; integer representing the limit)
 require './lib/credit_check'
+require 'pry'
 
 class CreditCard 
   attr_reader :card_number, :limit 
 
   def initialize(card_number, limit)
-    @card_number =card_number
+    @card_number = card_number
     @limit = limit
   end 
 
@@ -22,7 +23,10 @@ class CreditCard
   end
 
   def last_four
-    # returns a string of the last four digits
+    @card_number[-4..-1]
   end 
 
 end
+
+binding.pry
+
