@@ -1,6 +1,6 @@
 # pass two arguments on initialization (string of the credit card number; integer representing the limit)
 require './lib/credit_check'
-require 'pry'
+# require 'pry'
 
 class CreditCard 
   attr_reader :card_number, :limit 
@@ -28,5 +28,5 @@ class CreditCard
 
 end
 
-binding.pry
+# binding.pry
 
