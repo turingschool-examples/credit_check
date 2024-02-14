@@ -32,7 +32,7 @@ def valid_card(string)
   p result
 end 
 
-valid_card(card_number)
+# valid_card(card_number)
 
 # Output
 ## If it is valid, print "The number [card number] is valid!"
